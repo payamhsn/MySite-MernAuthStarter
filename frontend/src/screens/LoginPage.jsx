@@ -15,7 +15,7 @@ const LoginPage = ({ isLoggedIn, setIsLoggedIn }) => {
       // Store the token in the browser, e.g., localStorage
       localStorage.setItem("userInfo", JSON.stringify(data));
       setIsLoggedIn(true);
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error(error);
       // Display an error message to the user

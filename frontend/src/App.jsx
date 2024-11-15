@@ -6,6 +6,7 @@ import HomePage from "./screens/HomePage";
 import AboutPage from "./screens/AboutPage";
 import LoginPage from "./screens/LoginPage";
 import RegisterPage from "./screens/RegisterPage";
+import DashboardPage from "./screens/DashboardPage";
 import axios from "axios";
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
               }
             />
             <Route path="/register" element={<RegisterPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
           </Routes>
         </main>
         <Footer />
